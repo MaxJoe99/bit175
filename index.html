@@ -5,33 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Go</title>
-    
+    <style>
+      html {
+        background-color: black;
+
+      }
+      h1 
+      {
+        color: darkgrey;
+        text-align: center;
+        background-color: aquamarine;
+        margin: 12px 12px;
+        padding: 12px 5px;
+        border: 12px groove gold;
+        
+      }
+      #container1
+      {
+        display: flex;
+    flex-wrap: nowrap;
+      }
+      #container1 >div
+      {
+        background-color: aquamarine;
+        width: 490px;
+        margin: 12px 12px;
+        border: 12px dashed gold;
+        border-radius: 12px;
+      }
+
+
+
+    </style>
   </head>
   <body >
     <h1>Client temperature Logger</h1>
-    <form>
-      <span>Enter the Client's Name </tb>
-      </span>
-      <input type="text" id="namez">
-      <br>
-      <span>Enter the temperature in degree </span>
-      <input type="text" id="temperature">
-      <br>
-      <p>Enter their Sex</p>
-      <input type="radio" id="FTemp">
-      <label for="FTempo">Female</label>
-      <br>
-      <input type="radio" id="MTemp">
-      <label for="CTempo">Male</label>
-      <br>
-      <input type="radio" id="OTemp">
-      <label for="CTempo">Gender neutral</label>
-      <br>
-      <input type="button" value="Click here" id="Button" onclick="buttom()">
-    </form>
-    <p id="namez"></p>
-    <p id="Tmess"></p>
-    <p id="Gendermess"></p>
+    <div id="container1">
+      <div class="holdInfo">
+        <form>
+          <span>Enter the Client's Name </tb>
+          </span>
+          <input type="text" id="Cname">
+          <br>
+          <span>Enter the temperature in degree </span>
+          <input type="text" id="temperature">
+          <br>
+          <p>Enter their Sex</p>
+          <input type="radio" id="FTemp">
+          <label for="FTempo">Female</label>
+          <br>
+          <input type="radio" id="MTemp">
+          <label for="CTempo">Male</label>
+          <br>
+          <input type="radio" id="OTemp">
+          <label for="CTempo">Gender neutral</label>
+          <br>
+          <input type="button" value="Click here" id="Button" onclick="buttom()">
+        </form>
+        
+      </div>
+      <div class="holdInfo">
+        <p id="namez">Client name</p>
+        <p id="Tmess">Client temp</p>
+        <p id="Gendermess">Client gender</p>
+      </div>
+      
+    </div>
+    
   </body>
   <script src="js.js"></script>
 </html>

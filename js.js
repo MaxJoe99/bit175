@@ -1,6 +1,7 @@
 var count = 4;
-
-
+var name = "";
+var temp = 98;
+var gender = "";
 //_______________ Breaking point
 function onload1() {
    
@@ -27,9 +28,9 @@ window.setInterval("onload1()", 10000); // Note 10 seconds
 
 
 function buttom() {
-  var gender = "";
-  const temperature = document.getElementById("Tmess");
-  const Cname = document.getElementById("namez");
+  name = document.getElementById("Cname").value; 
+  temp = document.getElementById("temperature").value;
+   
   if (document.getElementById('FTemp').checked == true) {
     gender = "Female";
   } else if (document.getElementById('MTemp').checked == true) {
@@ -37,7 +38,7 @@ function buttom() {
   } else {
     gender = "Gender neutral";
   }
-  document.getElementById("namez").innerHTML = Cname;
-  document.getElementById("Tmess").innerHTML = temperature;
-  document.getElementById("Gendermess").innerHTML = gender;
+  document.getElementById("namez").innerHTML = "The client's name:" + name;
+  document.getElementById("Tmess").innerHTML = "The client's temp:" + temp;
+  document.getElementById("Gendermess").innerHTML = "The client's gender:" + gender;
 }
