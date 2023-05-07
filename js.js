@@ -20,8 +20,30 @@ function onload1() {
   } else { }
 }
 }
-window.setInterval("onload1()", 10000); // Note 10 seconds
+//window.setInterval("onload1()", 10000); // Note 10 seconds
 
+function breaker(){
+
+if (name.length > 10)
+{name = "Only stupid people can't read the instructions"}    // instruction in the abbr
+else 
+{
+  name = "The client's name:" + name;
+}
+if (temp > 99 || temp < 97.9 )
+{
+temp = "Only stupid people can't read the instructions"    // instruction in the abbr
+}
+else {
+  temp = "The client's temp:" + temp;
+}
+
+
+
+document.getElementById("namez").innerHTML =  name;
+document.getElementById("Tmess").innerHTML = temp;
+document.getElementById("Gendermess").innerHTML = "The client's gender:" + gender;// 
+}
 
 
 //_______________ The stuff that on the page
@@ -38,7 +60,6 @@ function buttom() {
   } else {
     gender = "Gender neutral";
   }
-  document.getElementById("namez").innerHTML = "The client's name:" + name;
-  document.getElementById("Tmess").innerHTML = "The client's temp:" + temp;
-  document.getElementById("Gendermess").innerHTML = "The client's gender:" + gender;
+  breaker()
+
 }
