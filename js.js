@@ -20,7 +20,7 @@ function onload1() {
   } else { }
 }
 }
-//window.setInterval("onload1()", 10000); // Note 10 seconds
+window.setInterval("onload1()", 10000); // Note 10 seconds
 
 function breaker(){
 
