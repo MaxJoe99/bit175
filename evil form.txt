@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+
+    <title>Customer Service</title>
+  </head>
+  <body>
+    <h1>Welcome</h1>
+    <p>
+      Welcome to our page on the Internet. In order to serve you better, please
+      tell us about yourself and how we can help.
+    </p>
+    <form action="./customer-service.html">
+      <p>
+        Your first name:
+        <br />
+        <input id="first-name" size="30" />
+      </p>
+      <p>
+        Your last name:
+        <br />
+        <input id="last-name" size="30" />
+      </p>
+      <p>
+        Title
+        <br />
+        <input type="radio" id="mr" name="title" value="Mr." />
+        <label for="mr">Mr.</label>
+        <br />
+        <input type="radio" id="ms" name="title" value="Ms." />
+        <label for="ms">Ms.</label>
+        <br />
+        <input type="radio" id="coach" name="title" value="Coach" />
+        <label for="coach" id="coach-label">Coach</label>
+      </p>
+      <p>
+        <label for="age">Age</label>
+        <br />
+        <input type="text" id="age" onblur="function fixAge()" />
+      </p>
+
+      <div id="software">
+        <p>What kind of operating system and software are you using?</p>
+        <textarea cols="50" id="sw" onfocus="changeTitle()"></textarea>
+      </div>
+    </form>
+    <script>
+      function changeTitle() {
+        /*let focuscounter = 1;
+        //alert(focuscounter);
+        if (
+          (document.getElementById("mr").checked = true) &&
+          focuscounter == 1
+        ) {
+          document.getElementById("mr").checked = false;
+          document.getElementById("ms").checked = true;
+          alert("Neener neener, you're a girl!");
+          //document.getElementById("sw").focus();
+          focuscounter++;
+          console.log(focuscounter);
+          return;
+        } else if (
+          (document.getElementById("ms").checked = true) &&
+          focuscounter == 1
+        ) {
+          document.getElementById("ms").checked = false;
+          document.getElementById("mr").checked = true;
+          alert("You don't look like a girl to me!");
+          document.getElementById("sw").focus();
+          focuscounter++;
+          console.log(focuscounter);
+          return;
+        } else if (
+          (document.getElementById("coach").checked = true) &&
+          focuscounter == 1
+        ) {
+          document.getElementById("coach-label").innerHTML = Fossil;
+          document.getElementById("sw").focus();
+          focuscounter++;
+          console.log(focuscounter);
+          return;
+        } */ 
+       return; }
+      
+      function fixAge() {
+        let age1 = document.getElementById("age");
+        console.log(age1);
+      }
+    </script>
+  </body>
+</html>

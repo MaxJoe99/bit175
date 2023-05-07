@@ -5,7 +5,7 @@ var gender = "";
 //_______________ Breaking point
 function onload1() {
    
-  console(count)
+  console.log(count)
   count -= 1;
   if (count >= 2) {
       if (window.confirm("Inactive user?\nContinues with page") == true) {} else {
